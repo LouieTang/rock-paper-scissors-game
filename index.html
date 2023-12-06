@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS AI</title>
+    <link rel="stylesheet" type="text/css" href="./P2_L2B_G13/styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid bg-dark text-white py-4" id="header">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Rock Paper Scissors Robot</h1>
+                <p class="text-center">Please allow permissions to begin</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-4" id="body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="text-center">
+                    <button id="start-camera" class="btn btn-primary">Start Camera</button>
+                    <video id="video" width="400" height="320" autoplay></video>
+                    <button id="click-photo" class="btn btn-primary">Click Photo</button>
+                    <canvas id="canvas" width="64" height="64"></canvas>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="text-center">
+                    <div class="btn-group">
+			<button id="rock" class="btn btn-secondary">Rock</button>
+			<button id="paper" class="btn btn-secondary">Paper</button>
+			<button id="scissors" class="btn btn-secondary">Scissors</button>
+                        <button id="reset" class="btn btn-secondary">End Game</button>
+                    </div>
+                    <h1 id="output"></h1>
+                    <p>Countdown: <span id="countdown"></span></p>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <div class="container-fluid py-4">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center" id="stats"></h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white py-4" id="footer">
+        <div class="row">
+            <div class="col">
+                <p class="text-center">Copyright ©2023 Group 13</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./P2_L2B_G13/client.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
